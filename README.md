@@ -1,55 +1,79 @@
-![](images\SmartHotel360Logo.png)
+# **This project is retired, archived, and no longer supported. You are welcome to continue to use and fork the repository.**
 
-**What is SmartHotel360 ?**                  
-**SmartHotel360** is a fictitious smart hospitality company showcasing the future of connected travel.  
+## For the latest sample references visit: https://aka.ms/tailwindtraders & https://aka.ms/rpsls 
+
+# SmartHotel360 Reference Apps
+We are happy to announce the release of SmartHotel360. This release intends to share a simplified version of SmartHotel360 reference sample apps used at Connect(); 2017 Keynotes.
+
+<p align="center">
+<img src="Documents/Images/Logo.png"/>
+</p>
+
+SmartHotel360 is a fictitious smart hospitality company showcasing the future of connected travel. 
+
 Their vision is to provide:
 - Intelligent, conversational, and personalized apps and experiences to guests 
 - Modern workplace experiences and smart conference rooms for business travelers
 - Real-time customer and business insights for hotel managers & investors
 - Unified analytics and package deal recommendations for campaign managers.
 
-----------
+There’s never been a better time to be a developer. Our intent with these set of reference apps is to show developers how to get started with Azure and build the apps of the future, today!
 
-**What is the intent of this demo?**          
-There’s never been a better time to be a developer. Our intent with these set of reference apps and Azure backend is to show developers how to get started building the apps of the future, today!
+# Repositories
 
-------
+For this reference app scenario, we built several consumer and line-of-business apps and an Azure backend. You can find all SmartHotel360 repos in the following locations:
 
-**Where is the code for the SmartHotel360 applications?**                         
+- [SmartHotel360](https://github.com/Microsoft/SmartHotel360)
+- [IoT](https://github.com/Microsoft/SmartHotel360-IoT)
+- [Mixed Reality](https://github.com/Microsoft/SmartHotel360-MixedReality)
+- [Backend](https://github.com/Microsoft/SmartHotel360-Backend)
+- [Website](https://github.com/Microsoft/SmartHotel360-Website)
+- [Mobile](https://github.com/Microsoft/SmartHotel360-Mobile)
+- [Sentiment Analysis](https://github.com/Microsoft/SmartHotel360-SentimentAnalysis)
+- [Registration](https://github.com/Microsoft/SmartHotel360-Registration)
+- [Coupon Management](https://github.com/Microsoft/SmartHotel360-CouponManagement)
 
-The entire code for the SmartHotel360 application is maintained on GitHub at https://github.com/microsoft/SmartHotel360. The build and release pipelines in this project are set to point to this repo.
+# Application Diagram
 
---------
-**How can I deploy the application to my subscription?**                  
-Please follow the exercises below to deploy the "Public Web" application.
+<p align="center">
+<img src="Images/Diagram.png"/>
+</p>
 
-### Exercise 1: Endpoint Creation:
-Service endpoints are a bundle of properties securely stored by the VSTS and is a way for VSTS to connect to the external systems or services.
+# Application Screens
 
-Since the connections are not established during project provisioning,the endpoint - Azure Resource Manager needs to be created manually.
+<p align="center">
+<img src="Images/Screens.png"/>
+</p>
 
-1. **Azure Resource Manager Service Endpoint**: Defines and secures a connection to a Microsoft Azure subscription using Service Principal Authentication (SPA).
+# Sign Up for Microsoft Azure
 
-    In the VSTS, navigate to the **Services** by clicking on the gear icon ![](images\gear.png), and click on the **+ New Service Endpoint** button. Select the **Azure Resource Manager** and  specify the  **Connection name**, select the **Subscription** from the dropdown and click on the **OK** button. Leave the **Resource Group** empty. This endpoint will be used to connect **VSTS** and **Azure**.
+You will need an Azure subscription to work with this demo code. You can:
 
-    You will be prompted to authorize this connection with Azure credentials. Disable pop-up blocker in your browser if you see a blank screen after clicking the **OK** button, and retry the step.
+- Open an account for free [Azure subscription](https://azure.com). You get credits that can be used to try out paid Azure services. Even after the credits are used up, you can keep the account and use free Azure services and features, such as the Web Apps feature in Azure App Service.
+- [Activate Visual Studio subscriber benefits](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/). Your Visual Studio subscription gives you credits every month that you can use for paid Azure services.
+- Create an [Azure student account](https://azure.microsoft.com/free/students/) and get free credit when you create your account.
 
-    > ***Tip***: If your subscription is not listed or to specify an existing service principal, click the link in the dialog which will switch to manual configuration mode and follow the <a href="https://blogs.msdn.microsoft.com/devops/2015/10/04/automating-azure-resource-group-deployment-using-a-service-principal-in-visual-studio-online-buildrelease-management/"> Service Principal creation </a> instructions.
+Learn more about it with [Microsoft Learn - Introduction to Azure](https://docs.microsoft.com/learn/azure).
 
-    ![](images\AzureEndpoint.png)
+# Blogs post and videos
 
-### Step 2: Configure Release Definition
+Here's links to videos and blog posts related to this project:
 
-Now that the connection is established, we will manually map the Azure endpoint to release definition.
+- <a href="https://channel9.msdn.com/Events/Connect/2017/K100">Scott Guthrie’s Keynote: Journey to the Intelligent Cloud in Channel 9</a>.
+- Microsoft Visual Studio YouTube Channel: [Connect(); 2017 Scott Guthrie Keynote Demos](https://www.youtube.com/playlist?list=PLReL099Y5nRfBAR43pZrcTTJ3LTa9hdsV)
+- The Visual Studio Blog: [Connect(); 2017: SmartHotel360 Demo Apps and Architecture](https://blogs.msdn.microsoft.com/visualstudio/2017/12/13/connect-2017-smarthotel360-demo-apps-and-architecture/)
+- Channel 9 Visual Studio Toolbox: [SmartHotel360 Demo App Overview](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/SmartHotel360-Demo-App-Overview)
 
-1. Navigate to release definition **PublicWebCD** under **Releases** tab, and click on **Edit**. Click on **Tasks**.
+# Contributing
 
-    ![](images\Updaterd1.png)
+This project welcomes contributions and suggestions.  Most contributions require you to agree to a
+Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
+the rights to use your contribution. For details, visit https://cla.microsoft.com.
 
-    ![](images\Updaterd2.png)
+When you submit a pull request, a CLA-bot will automatically determine whether you need to provide
+a CLA and decorate the PR appropriately (e.g., label, comment). Simply follow the instructions
+provided by the bot. You will only need to do this once across all repos using our CLA.
 
-2. Under **CosmosDB** phase, select **Azure Deployment CosmosDB**. Update **Azure Subscription** from the dropdown.
-
-     ![](images\Updaterd3.png)
-
-3. Repeat the above step to update **Azure Subscription** under the **Function** phase and **Web** phase. 
+This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
+For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
+contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
