@@ -116,6 +116,14 @@
       "resolved": "https://registry.npmjs.org/@types/redux-actions/-/redux-actions-2.2.1.tgz",
       "integrity": "sha512-hOQsydO5XSQtt/WIElYAPoFu6D8H0IpAsHFhmUvEvWGFGuKD7ZiWkI2vX9is3ZqmQSVTiQ0/SrBzlrwYHICi3A=="
     },
+    "@types/redux-localstorage": {
+      "version": "1.0.5",
+      "resolved": "https://registry.npmjs.org/@types/redux-localstorage/-/redux-localstorage-1.0.5.tgz",
+      "integrity": "sha512-KKPOQ8Hhk5c64zIdfVwSBW3Jv5Y4bRKtm6jfnMGQj+Eck2HIqjsSmKF1/rX9Pbs8TP+8tfx1P7u5IqfmCqIaqw==",
+      "requires": {
+        "redux": "^3.6.0"
+      }
+    },
     "@types/source-map": {
       "version": "0.5.0",
       "resolved": "https://registry.npmjs.org/@types/source-map/-/source-map-0.5.0.tgz",
@@ -814,9 +822,9 @@
       }
     },
     "bootstrap": {
-      "version": "3.3.7",
-      "resolved": "https://registry.npmjs.org/bootstrap/-/bootstrap-3.3.7.tgz",
-      "integrity": "sha1-WjiTlFSfIzMIdaOxUGVldPip63E="
+      "version": "3.4.1",
+      "resolved": "https://registry.npmjs.org/bootstrap/-/bootstrap-3.4.1.tgz",
+      "integrity": "sha512-yN5oZVmRCwe5aKwzRj6736nSmKDX7pLYwsXiCj/EYmo16hODaBiT4En5btW/jhBF/seV+XMx3aYwukYC3A49DA=="
     },
     "brace-expansion": {
       "version": "1.1.8",
@@ -4996,6 +5004,11 @@
         "lodash-es": "4.17.4",
         "reduce-reducers": "0.1.2"
       }
+    },
+    "redux-localstorage": {
+      "version": "0.4.1",
+      "resolved": "https://registry.npmjs.org/redux-localstorage/-/redux-localstorage-0.4.1.tgz",
+      "integrity": "sha512-dUha0YoH+BSZ2q15pakB+JWeqiuXUf3Ir4rObOpNrZ96HEdciGAjkL10k3KGdLI7qvQw/c096asw/SQ6TPjU/A=="
     },
     "redux-thunk": {
       "version": "2.2.0",
