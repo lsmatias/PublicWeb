@@ -42,7 +42,7 @@
     "msal": "0.1.1",
     "node-fetch": "1.7.3",
     "node-noop": "1.0.0",
-    "node-sass": "4.5.3",
+    "node-sass": "7.0.0",
     "normalize.css": "7.0.0",
     "postcss-loader": "2.0.6",
     "rc-slider": "^8.3.1",
