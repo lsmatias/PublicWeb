@@ -36,7 +36,7 @@
     "file-loader": "0.11.2",
     "history": "4.6.3",
     "immutable": "3.8.1",
-    "jquery": "3.2.1",
+    "jquery": "3.5.0",
     "json-loader": "0.5.4",
     "moment": "2.29.4",
     "msal": "0.1.1",
